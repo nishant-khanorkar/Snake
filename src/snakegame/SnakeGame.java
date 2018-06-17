@@ -275,7 +275,7 @@ public final class SnakeGame extends JPanel
 				case 'L' : x-=size;   break;
 				case 'R' : x+=size;   break;
 			}
-			if(x==0)			x=sc_x-2*size;
+			if(x==0)		x=sc_x-2*size;
 			if(x==sc_x-size)	x=size;
 			if(y==2*size)		y=sc_y-4*size;
 			if(y==sc_y-3*size)	y=3*size;
@@ -314,14 +314,14 @@ public final class SnakeGame extends JPanel
 		int k=ke.getKeyCode();
 			switch(k)
 			{
-				case KeyEvent.VK_UP		:   if(direction=='D')  return;
-												direction='U';  break;
+				case KeyEvent.VK_UP	:   if(direction=='D')  return;
+								direction='U';  break;
 				case KeyEvent.VK_DOWN   :   if(direction=='U')  return;
-												direction='D';  break;
+								direction='D';  break;
 				case KeyEvent.VK_LEFT   :   if(direction=='R')  return;
-												direction='L';  break;
+								direction='L';  break;
 				case KeyEvent.VK_RIGHT  :   if(direction=='L')  return;
-												direction='R';  break;
+								direction='R';  break;
 			}
 			repaint();
 		}
