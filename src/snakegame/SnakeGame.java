@@ -205,7 +205,7 @@ public final class SnakeGame extends JPanel
             b.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent ae) {
-					f.dispose();
+                    f.dispose();
 					songTime=clip.getMicrosecondPosition();
 					clip.stop();
                     new SnakeGame(songTime);
